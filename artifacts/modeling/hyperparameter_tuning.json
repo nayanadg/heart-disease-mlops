@@ -1,0 +1,16 @@
+{
+    "Logistic Regression": {
+        "best_params": {
+            "classifier__C": 1.0
+        },
+        "best_cv_roc_auc": 0.9024931590148981
+    },
+    "Random Forest": {
+        "best_params": {
+            "classifier__max_depth": null,
+            "classifier__min_samples_split": 5,
+            "classifier__n_estimators": 300
+        },
+        "best_cv_roc_auc": 0.8989989076945598
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "model_name": "Logistic Regression",
+    "selection_metric": "ROC-AUC",
+    "test_roc_auc": 0.9664502164502166,
+    "random_state": 42,
+    "training_samples": 242,
+    "test_samples": 61,
+    "numeric_features": [
+        "age",
+        "trestbps",
+        "chol",
+        "thalach",
+        "oldpeak"
+    ],
+    "categorical_features": [
+        "sex",
+        "cp",
+        "fbs",
+        "restecg",
+        "exang",
+        "slope",
+        "ca",
+        "thal"
+    ]
+}
