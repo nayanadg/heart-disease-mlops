@@ -24,6 +24,12 @@ The final selected model is a **Logistic Regression classifier**, packaged toget
 
 ---
 
+## 2. System Architecture
+
+The following architecture illustrates the complete end-to-end MLOps workflow implemented in this project, from data acquisition and model development to containerized deployment and monitoring.
+
+![End-to-End MLOps Architecture](artifacts/architecture/architecture_diagram.png)
+
 ## 2. Dataset
 
 The project uses the **Heart Disease UCI dataset**.
@@ -58,7 +64,7 @@ Missing-value handling is performed inside the Scikit-learn preprocessing pipeli
 
 ---
 
-## 3. Exploratory Data Analysis
+## 4. Exploratory Data Analysis
 
 EDA is implemented in:
 
@@ -95,7 +101,7 @@ data/processed/heart_disease_cleaned.csv
 
 ---
 
-## 4. Preprocessing and Feature Engineering
+## 5. Preprocessing and Feature Engineering
 
 A Scikit-learn `ColumnTransformer` is used to create a reproducible preprocessing pipeline.
 
@@ -134,7 +140,7 @@ The preprocessing pipeline is packaged together with the final classifier, ensur
 
 ---
 
-## 5. Model Development
+## 6. Model Development
 
 Three classification algorithms were evaluated:
 
@@ -158,7 +164,7 @@ Hyperparameter tuning was performed for Logistic Regression and Random Forest.
 
 ---
 
-## 6. Model Performance
+## 7. Model Performance
 
 ### Cross-Validation Results
 
@@ -206,7 +212,7 @@ models/model_metadata.json
 
 ---
 
-## 7. MLflow Experiment Tracking
+## 8. MLflow Experiment Tracking
 
 MLflow is used to track model experiments.
 
@@ -240,7 +246,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 8. Automated Testing
+## 9. Automated Testing
 
 Automated tests are implemented using **Pytest**.
 
@@ -268,7 +274,7 @@ The project currently contains **20 automated tests**.
 
 ---
 
-## 9. CI/CD Pipeline
+## 10. CI/CD Pipeline
 
 GitHub Actions is used for Continuous Integration.
 
@@ -300,7 +306,7 @@ The workflow runs automatically on pushes and pull requests to the main branch.
 
 ---
 
-## 10. FastAPI Prediction Service
+## 11. FastAPI Prediction Service
 
 The trained model is exposed through a REST API using **FastAPI**.
 
@@ -367,7 +373,7 @@ This API is intended for educational demonstration and is not a medical diagnost
 
 ---
 
-## 11. Docker Containerization
+## 12. Docker Containerization
 
 The FastAPI application is containerized using Docker.
 
@@ -404,7 +410,7 @@ The model environment uses the same pinned Scikit-learn version used to serializ
 
 ---
 
-## 12. Kubernetes Deployment
+## 13. Kubernetes Deployment
 
 The Dockerized application is deployed to a local Kubernetes cluster using Docker Desktop Kubernetes.
 
@@ -449,7 +455,7 @@ Service:    LoadBalancer
 
 ---
 
-## 13. Monitoring and Logging
+## 14. Monitoring and Logging
 
 Prometheus-compatible metrics are exposed through:
 
@@ -494,7 +500,7 @@ Monitoring was verified both locally and through the Kubernetes-deployed applica
 
 ---
 
-## 14. Project Structure
+## 15. Project Structure
 
 ```text
 heart-disease-mlops/
@@ -549,7 +555,7 @@ heart-disease-mlops/
 
 ---
 
-## 15. Installation and Setup
+## 16. Installation and Setup
 
 Clone the repository:
 
@@ -580,7 +586,7 @@ pip install -r requirements.txt
 
 ---
 
-## 16. Running the Pipeline
+## 17. Running the Pipeline
 
 ### Data Acquisition and EDA
 
@@ -620,7 +626,7 @@ uvicorn api.main:app --host 127.0.0.1 --port 8000
 
 ---
 
-## 17. Technology Stack
+## 18. Technology Stack
 
 - Python
 - Pandas
@@ -641,7 +647,7 @@ uvicorn api.main:app --host 127.0.0.1 --port 8000
 
 ---
 
-## 18. MLOps Workflow Summary
+## 19. MLOps Workflow Summary
 
 The complete workflow implemented in this project is:
 
@@ -677,7 +683,7 @@ Prometheus Metrics & API Logging
 
 ---
 
-## 19. Evidence
+## 20. Evidence
 
 Screenshots demonstrating the MLOps pipeline are available in the:
 
@@ -703,7 +709,7 @@ They include evidence of:
 
 ---
 
-## 20. Reproducibility
+## 21. Reproducibility
 
 The project provides:
 
